@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="player1" class="player">
+        <h3>Jugador 1</h3>
+        <div>Vida: <span>10</span></div>
+        <div>
+          <progress class="lifebar" value="10" max="10"></progress>
+        </div>
+        <div>
+          <input type="number" value="1" />
+          <button onclick="takeDamage(1)">Recibir daño</button>
+        </div>
+        <button onclick="drinkPotion(1)">Tomar poción</button>
+        <button onclick="addMoreLife(1)">Incrementar salud max</button>
+        <button onclick="removeMaxLife(1)">Decrementar salud max</button>
+      </div>
+
+      <div class="center">
+        <img src="https://thumbs.dreamstime.com/b/medieval-swords-shield-28972497.jpg" alt="" />
+      </div>
+
+      <div id="player2" class="player">
+        <h3>Jugador 2</h3>
+        <div>Vida: <span>10</span></div>
+        <div>
+          <progress class="lifebar" value="10" max="10"></progress>
+        </div>
+        <div>
+          <input type="number" value="1" />
+          <button onclick="takeDamage(2)">Recibir daño</button>
+        </div>
+        <button onclick="drinkPotion(2)">Tomar poción</button>
+        <button onclick="addMoreLife(2)">Incrementar salud max</button>
+        <button onclick="removeMaxLife(2)">Decrementar salud max</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
